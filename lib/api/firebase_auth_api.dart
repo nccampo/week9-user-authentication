@@ -12,7 +12,6 @@ class FirebaseAuthAPI {
   }
 
   Future<String?> signIn(String email, String password) async {
-    UserCredential credential;
     try {
       final credential = await auth.signInWithEmailAndPassword(
           email: email, password: password);
@@ -28,6 +27,7 @@ class FirebaseAuthAPI {
         return ('Wrong password provided for that user.');
       }
     }
+    return "";
   }
 
   Future<String?> signUp(String email, String password) async {
@@ -51,6 +51,7 @@ class FirebaseAuthAPI {
     } catch (e) {
       print(e);
     }
+    return "";
   }
 
   Future<void> signOut() async {
