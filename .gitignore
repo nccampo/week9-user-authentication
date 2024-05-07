@@ -41,7 +41,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-/lib/firebase_options.dart
-/lib/api/firebase_auth_api.dart
-/lib/providers/auth_provider.dart
